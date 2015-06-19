@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Checking for Vundle..."
+echo "Checking for Vim Vundle..."
 if [ ! -f ~/.vim/bundle/Vundle.vim/README.md ];
 then
 	echo "Vundle not found, installing..."
