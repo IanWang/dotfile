@@ -1,3 +1,27 @@
+[user]
+	name = Ian Wang
+	email = gogoenwon@gmail.com
+
+[alias]
+
+	# View abbreviated SHA, description, and history graph of the latest 20 commits
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+
+	# View the current working tree status using the short format
+	s = status -s
+
+	# Add all and give commit message
+	ac = add . commint -m
+
+	# Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+
+	# Remove branches that have already been merged with master
+	# a.k.a. ‘delete merged’
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
